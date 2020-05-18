@@ -17,6 +17,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         intro={data.intro || { blurbs: [] }}
         mainpitch={data.mainpitch || {}}
       >
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <script>
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
