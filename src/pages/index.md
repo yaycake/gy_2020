@@ -65,5 +65,5 @@ main:
     image: /img/b9e19055-26f5-425d-b6d0-f635b929fd40.jpg
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
+    image: /img/b9e19055-26f5-425d-b6d0-f635b929fd40.jpg
 ---
