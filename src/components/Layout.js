@@ -10,6 +10,7 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -51,6 +52,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Footer />
+      
     </div>
   )
 }
