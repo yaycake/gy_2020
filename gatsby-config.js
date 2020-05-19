@@ -1,10 +1,20 @@
+var netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
+
+
 module.exports = {
   siteMetadata: {
+
     title: 'Gatsby + Netlify CMS Starter',
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
   plugins: [
+    netlifyCmsPaths,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -35,6 +45,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: 'gatsby-remark-relative-images',
             options: {

@@ -16,7 +16,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -141,17 +141,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
-      <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
+     
     </Layout>
   )
 }
